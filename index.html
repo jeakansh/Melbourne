@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     <title>City of Melbourne</title>
 </head>
 <body>
@@ -25,155 +27,63 @@
         <div class="row" align="center" style="margin-top:30px;">
             <div class="col-sm-6" style="margin-top:30px;">
                 <h2>Tags</h2>
-             </div>
-             <div class="col-sm-6" style="margin-top:30px">
-                 <h2>Comments</h2>
-             </div>
-                <div class="col-sm-6" style="margin-top:30px;">
-                   <input list="tags" name="tag1" class="tagName" placeholder="Hashtag1">
-                    <datalist id="tags">
-                      <option value="#MaintainsUrbanBiosphere">
-                      <option value="#CaptureAndRescueStormWater">
-                      <option value="#DesignForAndByPeople">
-                      <option value="#DigitalTransformationOfCouncilBureacrats">
-                      <option value="#NewAreasOfEmployment">
-                      <option value="#PropertyPrice">
-                      <option value="#CovidOutbreakGuardRegulation">
-                      <option value="#CitizenParticipationInDirectDemocracy">
-                      <option value="#AffordableCommunityFacilitiesAndServices">
-                      <option value="#SupportHomeless">
-                      <option value="#CreativeValue">
-                      <option value="#E-learningPolicies">
-                      <option value="#CyclistFriendlyCity">
-                      <option value="#AffordablePublicTransport">
-                      <option value="#EnableCitizenEngagementWithNewTechnology">
-                      <option value="#OpenupGovernmentData">
-                      <option value="#CityCleanness">
-                      <option value="#MoreHotspot">
-                      <option value="#AcknowledgeAboriginalIdentity">
-                      <option value="#MoreMinorityRights">
-                    </datalist>
-                </div>
-                <div class="col-sm-6" style="margin-top:30px">
-                    <input type="text" class="comments" placeholder="Comments">
-                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top:30px">
+                <h2>Comments</h2>
+            </div>
+            <div class="col-sm-6" style="margin-top:30px;">
+                <input list="tags" name="tag1" id="tag1" class="tagName" placeholder="Hashtag1">
+            </div>
+            <div class="col-sm-6" style="margin-top:30px">
+                <input type="text" class="comments" placeholder="Comments">
+            </div>
+            <div class="col-sm-6" style="margin-top:30px;">
+                <input list="tags" name="tag2" id="tag2" class="tagName" placeholder="Hashtag2">
+            </div>
+            <div class="col-sm-6" style="margin-top:30px;">
+                <input type="text" class="comments" placeholder="Comments">
+            </div>
+            <div class="col-sm-6" style="margin-top:30px;">
+                <input list="tags" name="tag3" id="tag3" class="tagName" placeholder="Hashtag3">
+            </div>
+            <div class="col-sm-6" style="margin-top:30px;">
+                <input type="text" class="comments" placeholder="Comments">
+            </div>
+            <div class="col-sm-6" style="margin-top:30px;">
+                <input list="tags" name="tag4" id="tag4" class="tagName" placeholder="Hashtag4">
+            </div>
+            <div class="col-sm-6" style="margin-top:30px;">
+                <input type="text" class="comments" placeholder="Comments">
+            </div>
+            <div class="col-sm-6" style="margin-top:30px;">
+                <input list="tags" name="tag5" id="tag5" class="tagName" placeholder="Hashtag5">
+            </div>
+            <div class="col-sm-6" style="margin-top:30px;">
+                <input type="text" class="comments" placeholder="Comments">
+            </div>
 
-                <div class="col-sm-6" style="margin-top:30px;">
-                    <input list="tags" name="tag1" class="tagName" placeholder="Hashtag2">
-                     <datalist id="tags">
-                       <option value="#MaintainsUrbanBiosphere">
-                       <option value="#CaptureAndRescueStormWater">
-                       <option value="#DesignForAndByPeople">
-                       <option value="#DigitalTransformationOfCouncilBureacrats">
-                       <option value="#NewAreasOfEmployment">
-                       <option value="#PropertyPrice">
-                       <option value="#CovidOutbreakGuardRegulation">
-                      <option value="#CitizenParticipationInDirectDemocracy">
-                      <option value="#AffordableCommunityFacilitiesAndServices">
-                      <option value="#SupportHomeless">
-                      <option value="#CreativeValue">
-                      <option value="#E-learningPolicies">
-                      <option value="#CyclistFriendlyCity">
-                      <option value="#AffordablePublicTransport">
-                      <option value="#EnableCitizenEngagementWithNewTechnology">
-                      <option value="#OpenupGovernmentData">
-                      <option value="#CityCleanness">
-                      <option value="#MoreHotspot">
-                      <option value="#AcknowledgeAboriginalIdentity">
-                      <option value="#MoreMinorityRights">
-                     </datalist>
-                 </div>
-                 <div class="col-sm-6" style="margin-top:30px;">
-                     <input type="text" class="comments" placeholder="Comments">
-                 </div>
-
-                 <div class="col-sm-6" style="margin-top:30px;">
-                    <input list="tags" name="tag1" class="tagName" placeholder="Hashtag3">
-                     <datalist id="tags">
-                       <option value="#MaintainsUrbanBiosphere">
-                       <option value="#CaptureAndRescueStormWater">
-                       <option value="#DesignForAndByPeople">
-                       <option value="#DigitalTransformationOfCouncilBureacrats">
-                       <option value="#NewAreasOfEmployment">
-                       <option value="#PropertyPrice">
-                       	<option value="#CovidOutbreakGuardRegulation">
-                      <option value="#CitizenParticipationInDirectDemocracy">
-                      <option value="#AffordableCommunityFacilitiesAndServices">
-                      <option value="#SupportHomeless">
-                      <option value="#CreativeValue">
-                      <option value="#E-learningPolicies">
-                      <option value="#CyclistFriendlyCity">
-                      <option value="#AffordablePublicTransport">
-                      <option value="#EnableCitizenEngagementWithNewTechnology">
-                      <option value="#OpenupGovernmentData">
-                      <option value="#CityCleanness">
-                      <option value="#MoreHotspot">
-                      <option value="#AcknowledgeAboriginalIdentity">
-                      <option value="#MoreMinorityRights">
-                     </datalist>
-                 </div>
-                 <div class="col-sm-6" style="margin-top:30px;">
-                     <input type="text" class="comments" placeholder="Comments">
-                 </div>
-
-                 <div class="col-sm-6" style="margin-top:30px;">
-                    <input list="tags" name="tag1" class="tagName" placeholder="Hashtag4">
-                     <datalist id="tags">
-                       <option value="#MaintainsUrbanBiosphere">
-                       <option value="#CaptureAndRescueStormWater">
-                       <option value="#DesignForAndByPeople">
-                       <option value="#DigitalTransformationOfCouncilBureacrats">
-                       <option value="#NewAreasOfEmployment">
-                       <option value="#PropertyPrice">
-                       	<option value="#CovidOutbreakGuardRegulation">
-                      <option value="#CitizenParticipationInDirectDemocracy">
-                      <option value="#AffordableCommunityFacilitiesAndServices">
-                      <option value="#SupportHomeless">
-                      <option value="#CreativeValue">
-                      <option value="#E-learningPolicies">
-                      <option value="#CyclistFriendlyCity">
-                      <option value="#AffordablePublicTransport">
-                      <option value="#EnableCitizenEngagementWithNewTechnology">
-                      <option value="#OpenupGovernmentData">
-                      <option value="#CityCleanness">
-                      <option value="#MoreHotspot">
-                      <option value="#AcknowledgeAboriginalIdentity">
-                      <option value="#MoreMinorityRights">
-                     </datalist>
-                 </div>
-                 
-                 <div class="col-sm-6" style="margin-top:30px;">
-                     <input type="text" class="comments" placeholder="Comments">
-                 </div>
-                 <div class="col-sm-6" style="margin-top:30px;">
-                    <input list="tags" name="tag1" class="tagName" placeholder="Hashtag5">
-                     <datalist id="tags">
-                       <option value="#MaintainsUrbanBiosphere">
-                       <option value="#CaptureAndRescueStormWater">
-                       <option value="#DesignForAndByPeople">
-                       <option value="#DigitalTransformationOfCouncilBureacrats">
-                       <option value="#NewAreasOfEmployment">
-                       <option value="#PropertyPrice">
-                       	<option value="#CovidOutbreakGuardRegulation">
-                      <option value="#CitizenParticipationInDirectDemocracy">
-                      <option value="#AffordableCommunityFacilitiesAndServices">
-                      <option value="#SupportHomeless">
-                      <option value="#CreativeValue">
-                      <option value="#E-learningPolicies">
-                      <option value="#CyclistFriendlyCity">
-                      <option value="#AffordablePublicTransport">
-                      <option value="#EnableCitizenEngagementWithNewTechnology">
-                      <option value="#OpenupGovernmentData">
-                      <option value="#CityCleanness">
-                      <option value="#MoreHotspot">
-                      <option value="#AcknowledgeAboriginalIdentity">
-                      <option value="#MoreMinorityRights">
-                     </datalist>
-                 </div>
-                 <div class="col-sm-6" style="margin-top:30px;">
-                     <input type="text" class="comments" placeholder="Comments">
-                 </div>
-                 
+            <datalist id="tags" class="tagList" name="tagList">
+                <option value="#MaintainsUrbanBiosphere">
+                <option value="#CaptureAndRescueStormWater">
+                <option value="#DesignForAndByPeople">
+                <option value="#DigitalTransformationOfCouncilBureacrats">
+                <option value="#NewAreasOfEmployment">
+                <option value="#PropertyPrice">
+                <option value="#CovidOutbreakGuardRegulation">
+                <option value="#CitizenParticipationInDirectDemocracy">
+                <option value="#AffordableCommunityFacilitiesAndServices">
+                <option value="#SupportHomeless">
+                <option value="#CreativeValue">
+                <option value="#E-learningPolicies">
+                <option value="#CyclistFriendlyCity">
+                <option value="#AffordablePublicTransport">
+                <option value="#EnableCitizenEngagementWithNewTechnology">
+                <option value="#OpenupGovernmentData">
+                <option value="#CityCleanness">
+                <option value="#MoreHotspot">
+                <option value="#AcknowledgeAboriginalIdentity">
+                <option value="#MoreMinorityRights">
+            </datalist>
         </div>
         <form id="form1">
             <div class="row" align="center">
@@ -208,5 +118,25 @@
             </div>
             </form>
     </div>
+
+<script>
+    $(".tagName").blur(function() {
+        var hashTag = $(this).val();
+        var tagLength = $('.tagName').length;
+        var id = this.id;
+        for (var i = 1 ; i<tagLength+1; i++)
+        {
+            if(id != ("tag"+i))
+            {
+                var link = $("#tag"+i).val();
+                if(hashTag == link && link!="") {
+                    alert("This #tag is already chosen.");
+                    $(this).val("");
+                }
+            }
+            
+        }
+    });
+</script>
 </body>
 </html>
